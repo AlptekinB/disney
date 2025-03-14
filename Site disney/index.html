@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disney Enigmes</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://www.youtube.com/iframe_api"></script> <!-- API YouTube -->
+</head>
+<body>
+    <h1>Bienvenue dans le monde magique des énigmes Disney !</h1>
+    
+    <div id="enigme1" class="enigme-container active">
+        <h2>Quel est le prénom de la princesse qui a un ami tigre nommé Rajah ?</h2>
+        <img id="character1" class="character-img" src="images/jasmine.png" alt="Jasmine">
+        <input type="text" id="reponse1">
+        <button onclick="verifierReponse(1, 'Jasmine')">Valider</button>
+        <p id="animation1" class="animation">✨ Bonne réponse ! Passons à la suivante... ✨</p>
+    </div>
+
+    <div id="enigme2" class="enigme-container">
+        <h2>Quel est le nom du lionceau dans Le Roi Lion ?</h2>
+        <img id="character2" class="character-img" src="images/simba.png" alt="Simba">
+        <input type="text" id="reponse2">
+        <button onclick="verifierReponse(2, 'Simba')">Valider</button>
+        <p id="animation2" class="animation">🦁 Bien joué ! Continuons... 🦁</p>
+    </div>
+
+   
+    <audio id="audioPlayer" style="display:none;"></audio>
+    <script src="spotify.js"></script>
+    <script src="script.js"></script>
+    
+</body>
+</html>
